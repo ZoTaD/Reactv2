@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './componentes/NavBar';
+import ItemListContainer from './componentes/ItemListContainer';
 
 function App() {
     return ( <
         div className = "App" >
         <
-        h1 className = "text-3xl font-bold underline" > Hola mundo con React! < /h1> <
-        NavBar > < /NavBar> {
+        NavBar > < /NavBar> <
+        h1 className = "text-3xl font-bold underline" > Hola mundo con React! < /h1>
+
+        <
+        ItemListContainer / >
+
+        {
             /* <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>

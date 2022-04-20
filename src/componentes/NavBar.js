@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from './CartWidget'
 
 const NavBar = () => {
     return ( <
@@ -16,11 +17,15 @@ const NavBar = () => {
         placeholder = "Search"
         class = "input input-bordered" / >
         <
-        /div> <
+        CartWidget > < /CartWidget> <
+        /div>
+
+        <
         div class = "dropdown dropdown-end" >
         <
         label tabindex = "0"
         class = "btn btn-ghost btn-circle avatar" >
+
         <
         div class = "w-10 rounded-full" >
         <
@@ -41,12 +46,14 @@ const NavBar = () => {
         li > < a > Settings < /a></li >
         <
         li > < a > Logout < /a></li >
+
         <
         /ul> <
         /div> <
         /div> <
         /div>
     )
+
 }
 
 export default NavBar
